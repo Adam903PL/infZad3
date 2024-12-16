@@ -1,0 +1,28 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+            <h1>Transformator Obrazów</h1>
+            <img class="picture" src="./406536819_1986522298399759_5827031692911209638_n.jpg" alt="Sample Image">
+
+            <h3>Filtry</h3>
+            <label>        <input type="checkbox" name="Blur" id="" onchange="applyBlur(this.checked)"> Blur</label>
+            <label>        <input type="checkbox" name="Sepia" id="" onchange="applySepia(this.checked)"> Sepia</label>
+            <label><input type="checkbox" name="Negatyw" id="" onchange="applyNegative(this.checked)"> Negatyw</label>
+            <h3>Kolory</h3>
+            <button>Kolory</button><button onclick="greyStyleApply()">Czarno-Biały</button>
+            
+            <h3>Przezroczystość</h3>
+            <label>Przezroczystość:<input type="range" id="opacity" min="0" max="100" value="100" ></label>
+            <button id="applyOpacity" onclick="opacityFun()">Apply</button>
+            <h3>Jasność</h3>
+            <label><input type="range"  id="brightnes" min="0" max="100" value="100"></label>
+            <button id="applyBrightnes" onclick="brightnesFun()">Apply</button>
+    </body>
+    </html>
